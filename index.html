@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 50px;
+            background-color: aqua;
+        }
+
+        main section {
+            display: flex;
+            height: 100%;
+        }
+
+        main article {
+            height: 200px;
+            width: 50%;
+            background-color: beige;
+        }
+
+        footer {
+            background-color: antiquewhite;
+            height: 100px;
+        }
+
+        header, 
+        article, 
+        footer {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header">
+        <p>Isi konten header</p>
+    </header>
+    <main class="header">
+        <section>
+            <article>
+                <p>Konten Image</p>
+            </article>
+
+            <article>
+                <p>Isi konten</p>
+            </article>
+        </section>
+    </main>
+    <footer class="header">
+        <p>Isi Footer</p>
+    </footer>
+
+    <script>
+        // const header = document.getElementById("header");
+        // header.innerHTML = "<h1>MENU MAKANAN HARI INI</h1>";
+        // console.log(header);
+
+        // const footer = document.getElementsByTagName("footer")[0];
+        // footer.innerHTML = "Hasil Setelah dimanipulasi";
+        // console.log(footer)
+
+        // const headerByClass = document.getElementsByClassName("header");
+        // console.log(headerByClass[0]);
+
+        const article = document.querySelectorAll("article");
+        console.log(article);
+
+        const main = document.querySelector("article");
+        console.log(main);
+
+    </script>
+</body>
+</html>
